@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 80%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-box {
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #e2f1f8;
+    align-self: flex-end;
+}
+
+.bot-message {
+    display: flex;
+    align-items: flex-start;
+    background-color: #dff6f0;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.bot-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bot-message::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #dff6f0 transparent transparent transparent;
+    top: 0;
+    left: 10px;
+}
+
+.choices {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #128c7e;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0a6e5d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D') repeat;
+    /* Default image */
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    /* Adjust the blur amount as needed */
+}
+
+.chat-container {
+    max-width: 80%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add a semi-transparent white background for better readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ... (rest of your existing styles) */
