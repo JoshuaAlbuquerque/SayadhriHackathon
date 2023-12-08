@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Chat Interface</title>
+    <title>Button Revealer</title>
+    <style>
+        .hidden-buttons {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,12 +29,24 @@
         </div>
     </div>
     <div class="choices">
+        <button id="proceed" onclick="toggleButtons()">proceed</button>
+
+    <div class="hidden-buttons">
         <button onclick="sendMessage('High')">High</button>
         <button onclick="sendMessage('Normal')">Normal</button>
         <button onclick="sendMessage('Low')">Low</button>
-    </div>
 </div>
 
 <script src="script.js"></script>
+<script>
+    function toggleButtons() {
+        var hiddenButtons = document.querySelector('.hidden-buttons');
+        hiddenButtons.style.display = (hiddenButtons.style.display === 'none') ? 'block' : 'none';
+        // Hide the "Reveal Buttons" button
+        proceed.style.display = 'none';
+        // Show the hidden buttons
+        hiddenButtons.style.display = 'block';
+    }
+</script>
 </body>
 </html>

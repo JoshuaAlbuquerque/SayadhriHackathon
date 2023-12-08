@@ -68,8 +68,11 @@ body {
 .choices {
     display: flex;
     gap: 8px;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
     padding: 16px;
     border-top: 1px solid #ccc;
+    text-align: center; /* Center the text within each button */
 }
 
 button {
